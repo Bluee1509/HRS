@@ -1,0 +1,140 @@
+Phân tích chức năng chi tiết cho hệ thống quản lý và lưu trữ tài liệu nhân sự
+
+I.	Chi tiết chức năng
+1.	Quản lý thông tin nhân viên:
+o	Lưu trữ thông tin cá nhân của nhân viên:
+1.	Nhân viên mới được thêm vào hệ thống bằng cách nhập thông tin cá nhân như họ tên, ngày sinh, địa chỉ, số điện thoại, email.
+2.	Hệ thống lưu trữ thông tin này trong cơ sở dữ liệu.
+3.	Khi có thay đổi (ví dụ: thay đổi địa chỉ email), hệ thống cho phép cập nhật thông tin.
+o	Lưu trữ thông tin về quá trình làm việc của nhân viên:
+1.	Khi nhân viên mới vào làm, hệ thống ghi nhận thông tin như ngày vào làm, bộ phận làm việc, chức vụ, trình độ học vấn.
+2.	Hệ thống cập nhật thông tin này theo quá trình làm việc của nhân viên.
+3.	Quản lý thông tin về chuyển bộ phận, thăng chức, hoặc nâng cao trình độ học vấn.
+2.	Quản lý hồ sơ nhân viên:
+o	Lưu trữ các loại hồ sơ liên quan đến nhân viên:
+1.	Hệ thống lưu trữ các loại hồ sơ như hợp đồng lao động, bảng lương, bảo hiểm xã hội, bảo hiểm y tế.
+2.	Mỗi hồ sơ được gắn với thông tin của nhân viên tương ứng.
+o	Quản lý quy trình lưu trữ và truy cập hồ sơ:
+1.	Hệ thống đảm bảo tính bảo mật của hồ sơ.
+2.	Người dùng có quyền truy cập hồ sơ của mình và tìm kiếm hồ sơ nhanh chóng.
+3.	Hệ thống ghi nhận lịch sử truy cập hồ sơ để theo dõi ai đã xem hồ sơ và khi nào.
+3.	Tự động hóa quy trình quản lý nhân sự:
+o	Tự động hóa quy trình tuyển dụng:
+1.	Hệ thống tự động đăng tin tuyển dụng trên các kênh (website, mạng xã hội, email).
+2.	Nhận hồ sơ ứng viên và lưu trữ trong hệ thống.
+3.	Tự động đánh giá ứng viên dựa trên tiêu chí đã thiết lập.
+o	Tự động hóa quy trình đào tạo:
+1.	Hệ thống lập kế hoạch đào tạo dựa trên nhu cầu của từng nhân viên.
+2.	Tổ chức đào tạo và ghi nhận kết quả.
+3.	Tự động thông báo cho nhân viên về lịch đào tạo.
+o	Tự động hóa quy trình đánh giá năng lực:
+1.	Đánh giá năng lực định kỳ (ví dụ: hàng năm) dựa trên tiêu chí đã thiết lập.
+2.	Đánh giá năng lực theo dự án (nếu có).
+4.	Báo cáo thống kê:
+o	Báo cáo thống kê về tình hình nhân sự của doanh nghiệp:
+1.	Hệ thống sẽ tự động tạo các báo cáo thống kê về số lượng nhân viên theo bộ phận, theo chức vụ, theo trình độ học vấn.
+2.	Báo cáo này giúp doanh nghiệp theo dõi và đánh giá tình hình nhân sự, từ đó đưa ra các quyết định phù hợp.
+o	Báo cáo thống kê về hiệu quả hoạt động của bộ phận nhân sự:
+1.	Hệ thống sẽ tự động tạo báo cáo thống kê về hiệu quả hoạt động của bộ phận nhân sự.
+2.	Báo cáo này có thể bao gồm các thông số như tỷ lệ tuyển dụng thành công, tỷ lệ đào tạo hoàn thành, tỷ lệ đánh giá năng lực đạt kết quả cao, và các chỉ số khác.
+3.	Báo cáo giúp bộ phận nhân sự đánh giá hiệu quả của các hoạt động và đề xuất cải tiến.
+II.	Luồng xử lý
+1. Quản lý thông tin nhân viên
+1.1. Thêm thông tin nhân viên mới:
+•	Nhân viên nhân sự nhập thông tin cá nhân của nhân viên mới vào hệ thống, bao gồm: họ tên, ngày sinh, địa chỉ, số điện thoại, email,...
+•	Hệ thống kiểm tra tính hợp lệ của dữ liệu nhập vào.
+•	Nếu dữ liệu hợp lệ, hệ thống lưu trữ thông tin nhân viên mới và tạo tài khoản cho nhân viên.
+•	Nếu dữ liệu không hợp lệ, hệ thống thông báo lỗi cho nhân viên nhân sự và yêu cầu nhập lại dữ liệu.
+1.2. Cập nhật thông tin nhân viên:
+•	Nhân viên nhân sự chọn thông tin nhân viên cần cập nhật.
+•	Hệ thống hiển thị thông tin nhân viên hiện tại.
+•	Nhân viên nhân sự sửa đổi thông tin cần thiết.
+•	Hệ thống kiểm tra tính hợp lệ của dữ liệu sửa đổi.
+•	Nếu dữ liệu hợp lệ, hệ thống cập nhật thông tin nhân viên và lưu lại lịch sử thay đổi.
+•	Nếu dữ liệu không hợp lệ, hệ thống thông báo lỗi cho nhân viên nhân sự và yêu cầu nhập lại dữ liệu.
+1.3. Xóa thông tin nhân viên:
+•	Nhân viên nhân sự chọn thông tin nhân viên cần xóa.
+•	Hệ thống hiển thị thông tin nhân viên và cảnh báo về việc xóa thông tin.
+•	Nhân viên nhân sự xác nhận việc xóa thông tin.
+•	Hệ thống xóa thông tin nhân viên khỏi hệ thống.
+2. Quản lý hồ sơ nhân viên
+2.1. Thêm hồ sơ nhân viên mới:
+•	Nhân viên nhân sự chọn loại hồ sơ cần thêm (hợp đồng lao động, bảng lương, bảo hiểm xã hội,...).
+•	Hệ thống hiển thị mẫu hồ sơ tương ứng.
+•	Nhân viên nhân sự nhập thông tin vào mẫu hồ sơ.
+•	Hệ thống kiểm tra tính hợp lệ của dữ liệu nhập vào.
+•	Nếu dữ liệu hợp lệ, hệ thống lưu trữ hồ sơ nhân viên mới và gắn liền với hồ sơ cá nhân của nhân viên.
+•	Nếu dữ liệu không hợp lệ, hệ thống thông báo lỗi cho nhân viên nhân sự và yêu cầu nhập lại dữ liệu.
+2.2. Xem hồ sơ nhân viên:
+•	Nhân viên nhân sự chọn thông tin nhân viên cần xem hồ sơ.
+•	Hệ thống hiển thị danh sách các loại hồ sơ của nhân viên.
+•	Nhân viên nhân sự chọn loại hồ sơ cần xem.
+•	Hệ thống hiển thị nội dung của hồ sơ được chọn.
+2.3. Tìm kiếm hồ sơ nhân viên:
+•	Nhân viên nhân sự nhập các tiêu chí tìm kiếm (họ tên, ngày sinh, loại hồ sơ,...).
+•	Hệ thống tìm kiếm các hồ sơ nhân viên phù hợp với tiêu chí tìm kiếm.
+•	Hệ thống hiển thị danh sách các hồ sơ tìm kiếm được.
+•	Nhân viên nhân sự chọn hồ sơ cần xem.
+•	Hệ thống hiển thị nội dung của hồ sơ được chọn.
+2.4. Xóa hồ sơ nhân viên:
+•	Nhân viên nhân sự chọn thông tin nhân viên và chọn hồ sơ cần xóa.
+•	Hệ thống hiển thị thông tin hồ sơ và cảnh báo về việc xóa hồ sơ.
+•	Nhân viên nhân sự xác nhận việc xóa hồ sơ.
+•	Hệ thống xóa hồ sơ nhân viên khỏi hệ thống.
+3. Tự động hóa quy trình quản lý nhân sự
+3.1. Tự động hóa quy trình tuyển dụng:
+•	Hệ thống tự động đăng tin tuyển dụng lên các trang web tuyển dụng.
+•	Hệ thống tự động tiếp nhận hồ sơ ứng tuyển qua email hoặc website.
+•	Hệ thống tự động đánh giá hồ sơ ứng tuyển dựa trên các tiêu chí đã được cài đặt.
+•	Hệ thống tự động gửi email thông báo kết quả tuyển dụng cho các ứng viên.
+3.2. Tự động hóa quy trình đào tạo:
+•	Hệ thống tự động lập kế hoạch đào tạo dựa trên nhu cầu của doanh nghiệp và năng lực của nhân viên.
+•	Hệ thống tự động đăng ký tham gia khóa đào tạo cho nhân viên.
+•	Hệ thống tự động tổ chức các khóa đào tạo trực tuyến hoặc trực tiếp.
+•	Hệ thống tự động đánh giá kết quả đào tạo của nhân viên.
+3.3. Tự động hóa quy trình đánh giá năng lực (tiếp theo):
+•	Hệ thống tự động đánh giá năng lực theo dự án dựa trên hiệu quả công việc của nhân viên trong dự án.
+•	Hệ thống tự động tạo báo cáo đánh giá năng lực của nhân viên.
+3.4. Quản lý quy trình tự động:
+•	Nhân viên quản trị hệ thống có thể tạo, sửa đổi và xóa các quy trình tự động.
+•	Nhân viên quản trị hệ thống có thể theo dõi và giám sát việc thực thi các quy trình tự động.
+4. Báo cáo thống kê
+4.1. Báo cáo thống kê về tình hình nhân sự:
+•	Hệ thống tự động tạo các báo cáo thống kê về tình hình nhân sự của doanh nghiệp như: số lượng nhân viên theo bộ phận, theo chức vụ, theo trình độ học vấn,...
+•	Nhân viên nhân sự có thể tùy chọn các tiêu chí báo cáo và thời gian báo cáo.
+•	Hệ thống xuất báo cáo dưới dạng bảng tính hoặc biểu đồ.
+4.2. Báo cáo thống kê về hiệu quả hoạt động của bộ phận nhân sự:
+•	Hệ thống tự động tạo các báo cáo thống kê về hiệu quả hoạt động của bộ phận nhân sự như: thời gian xử lý hồ sơ nhân viên, tỷ lệ tuyển dụng thành công, tỷ lệ đào tạo thành công,...
+•	Nhân viên quản lý nhân sự có thể xem các báo cáo này để đánh giá hiệu quả hoạt động của bộ phận và đưa ra các biện pháp cải tiến.
+
+III.	Các biểu đồ 
+1.	Biểu đồ Use Case
+
+
+
+ 
+
+
+
+2.	Biểu đồ lớp
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
